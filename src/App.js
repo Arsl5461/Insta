@@ -3,7 +3,7 @@ import Timeline from "./Components/Timeline";
 import { useState } from "react";
 import Profile from "./Components/Profile";
 import Comments from "./Components/Comments";
-
+import Inbox from "./Components/Inbox";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Messeges from "./Components/Messeges";
 import { messages } from "./data";
@@ -28,6 +28,11 @@ function App() {
           path="/messages"
           exact={true}
           element={<Messeges data={message} />}
+        ></Route>
+         <Route
+          path="/messages/:id"
+          exact={true}
+          element={<Inbox message={message} data={Data} />}
         ></Route>
       </Routes>
     </BrowserRouter>

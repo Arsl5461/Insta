@@ -2,29 +2,55 @@ import hamza from "../src/assets/hamza.jpg";
 import haris from "../src/assets/haris.jpg";
 import fahad from "../src/assets/fahad.jpg";
 import Arslan from "../src/assets/arslan.jpg";
-import waqas from "../src/assets/hamza.jpg";
+import waqas from "../src/assets/waqas.jpg";
 import haris1 from "../src/assets/haris1.JPG";
 const messages = [
   {
+    userid:1,
     username: "Adeel Hamza",
     profileimg: hamza,
-    messages: "Hello How are You",
+    messages: "My name is hamza",
+    inbox: [
+      {
+      messageid:123,
+      message:"Hello How are You"
+      },
+      {
+        messageid:23,
+        message:"Yes i am good "
+        },
+        {
+          messageid:123,
+          message:"Where Do you live?"
+          },
+          {
+            messageid:123,
+            message:"What is your name?"
+            },
+            {
+              messageid:13,
+              message:"My name is Hamza"
+              },
+    ],
   },
   {
+    userid:2,
     username: "Arslan",
     profileimg: Arslan,
     messages: "Hello How are You",
   },
   {
+    userid:3,
     username: "Waqas",
     profileimg: waqas,
     messages: "Hello How are You",
   },
   {
+    userid:4,
     username: "Fahad",
     profileimg: fahad,
     messages: "Hello How are You",
-  },
+  }, 
 ];
 const Data = [
   {

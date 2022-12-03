@@ -8,11 +8,7 @@ function Comments({data}) {
     let path="/";
     navigate(path);
   }
-  const [comment,setComment]=useState("")
-  useEffect(()=>{
-    setComment(comment);  
- 
-   },[comment])   
+  const [comment,setComment]=useState("") 
   const filtered = data.filter(obj => {
     return obj.id == params.id;
   }) 
@@ -23,9 +19,9 @@ function Comments({data}) {
     .profileimg, 
     coment:comment 
   }); 
-  console.log("Comment Added"); 
+  setComment(filtered[0].comments);
+  setComment("")
 }
-  console.log(filtered[0].comments); 
   return (
     <div className='container'>
         <i onClick={()=>main()}  class="fa-solid fa-angle-left icon2 point"></i>

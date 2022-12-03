@@ -8,9 +8,14 @@ function Messeges({data}) {
     let path="/";
     navigate(path);
   }
+  const inbox=(id)=>{
+    let path=`/messages/${id}`;
+    navigate(path);
+  }
   const filtered = data.filter(obj => {
     return obj.id === params.id;
-  });;
+  });
+  console.log(filtered[0].username);
   return (
     <>
     <div className='container'>
@@ -27,7 +32,7 @@ function Messeges({data}) {
         <div className="profile2 d-flex left1">
         <img src={item.profileimg} alt="Profile"/>
         <div className="d-flex flex-column">
-        <h4 className='mar'>{item.username}</h4>
+        <h4 className='mar' onClick={()=>inbox(item.userid)}>{item.username}</h4>
         <p className='state1'>{item.messages}</p>
         </div>
         </div>
