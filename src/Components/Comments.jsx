@@ -22,6 +22,7 @@ function Comments({data}) {
   setComment(filtered[0].comments);
   setComment("")
 }
+console.log(filtered[0].comments)
   return (
     <div className='container'>
         <i onClick={()=>main()}  class="fa-solid fa-angle-left icon2 point"></i>

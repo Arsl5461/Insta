@@ -6,51 +6,150 @@ import waqas from "../src/assets/waqas.jpg";
 import haris1 from "../src/assets/haris1.JPG";
 const messages = [
   {
-    userid:1,
+    userid: 1,
     username: "Adeel Hamza",
     profileimg: hamza,
     messages: "My name is hamza",
     inbox: [
       {
-      messageid:123,
-      message:"Hello How are You"
+        messageid: 123,
+        message: "Hello How are You",
       },
       {
-        messageid:23,
-        message:"Yes i am good "
-        },
-        {
-          messageid:123,
-          message:"Where Do you live?"
-          },
-          {
-            messageid:123,
-            message:"What is your name?"
-            },
-            {
-              messageid:13,
-              message:"My name is Hamza"
-              },
+        messageid: 23,
+        message: "Yes i am good ",
+      },
+      {
+        messageid: 123,
+        message: "Where Do you live?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 13,
+        message: "My name is Hamza",
+      },
+      {
+        messageid: 13,
+        message: "My name is Hamza",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 123,
+        message: "Where Do you live?",
+      },
     ],
   },
   {
-    userid:2,
+    userid: 2,
     username: "Arslan",
     profileimg: Arslan,
-    messages: "Hello How are You",
+    messages: "My Name is Arslan",
+    inbox: [
+      {
+        messageid: 123,
+        message: "Hello How are You",
+      },
+      {
+        messageid: 23,
+        message: "Yes i am good ",
+      },
+      {
+        messageid: 123,
+        message: "Where Do you live?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 13,
+        message: "My name is Arslan",
+      },
+    ],
   },
+
   {
-    userid:3,
+    userid: 3,
     username: "Waqas",
     profileimg: waqas,
-    messages: "Hello How are You",
+    messages: "My Name is Waqas",
+    inbox: [
+      {
+        messageid: 123,
+        message: "Hello How are You",
+      },
+      {
+        messageid: 23,
+        message: "Yes i am good ",
+      },
+      {
+        messageid: 123,
+        message: "Where Do you live?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 13,
+        message: "My name is Waqas",
+      },
+    ],
   },
   {
-    userid:4,
+    userid: 4,
     username: "Fahad",
     profileimg: fahad,
-    messages: "Hello How are You",
-  }, 
+    messages: "My Name is Fahad",
+    inbox: [
+      {
+        messageid: 123,
+        message: "Hello How are You",
+      },
+      {
+        messageid: 23,
+        message: "Yes i am good ",
+      },
+      {
+        messageid: 123,
+        message: "Where Do you live?",
+      },
+      {
+        messageid: 123,
+        message: "What is your name?",
+      },
+      {
+        messageid: 13,
+        message: "My name is Fahad",
+      },
+    ],
+  },
 ];
 const Data = [
   {

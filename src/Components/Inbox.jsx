@@ -9,19 +9,25 @@ function Inbox({message,data}) {
       navigate(path);
     }
     console.log(message[0].inbox[0].messageid);
+    console.log(params.id);
+
+  const filtered = message.filter(obj => {
+    return obj.userid == params.id;
+  });
+  console.log(filtered[0]);
 
   return (
    <div className="container">
      <i onClick={()=>homescreen()} className="fa-solid fa-angle-left icon3 point"></i>
      <div className='d-flex justify-content-center align-items-center top'>
         <div className="profile3">
-       <img src={data[0].profileimg} alt="inbox"/>
+       <img src={filtered[0].profileimg} alt="inbox"/>
        </div>
-        <h4>{message[0].username}</h4>
+        <h4>{filtered[0].username}</h4>
        {data[0].followers>1000?<i class="fa-solid fa-check clr icon"></i>:""}
       </div>
       <div className="inboxMessages d-flex flex-column">
-        {messages[0].inbox.map((item)=>{
+        {filtered[0].inbox.map((item)=>{
             if(item.messageid===123){
             return(
             <div className="recieveMessage">

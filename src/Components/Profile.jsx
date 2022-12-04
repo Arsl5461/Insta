@@ -48,7 +48,7 @@ function Profile({data}) {
     <h3>{filtered[0].title}</h3>
     <p>{filtered[0].subtitle}</p>
     <p><b>Mern Stack Developer at Arham Soft PVT Limited</b></p>
-        <button onClick={()=>message()} className='btn'>Message</button>
+        <button onClick={()=>message()} className='btn btn-primary'>Message</button>
     <div className='d-flex widt flex-wrap mt-3'>
   {filtered[0].postImages.map((item)=>{
     return(
