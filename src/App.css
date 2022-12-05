@@ -18,3 +18,14 @@ height: 300px;
   width:250px;
   border: 1px solid black;
 }
+.border{
+  border-radius:30px;
+
+}
+.input-comment{
+  margin-top:1rem;
+}
+.messagewidth{
+  width:30px;
+  height:30px;
+}

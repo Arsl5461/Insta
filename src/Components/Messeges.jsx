@@ -24,8 +24,7 @@ function Messeges({data}) {
         <h4>{filtered[0].username}</h4>
       </div>
       <div className='d-flex justify-content-center align-items-center tp'>
-      <input type="text" placeholder="Search.." name="search"/>
-      <button className='ptr' type="submit"><i class="fa fa-search "></i></button>
+          <input type="text" placeholder="Search.." name="search" className='border'/>
       </div>
       {data.map((item)=>{
         return(

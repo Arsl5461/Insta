@@ -151,16 +151,23 @@ input[type=text] {
   margin-left: 100px;
 }
 .recieveMessage{
+  text-align: center;
   width:50%;
-  background-color: darkgray;
+  height: 50px;
+  background-color: black;
   color:white;
+  border-radius: 10px;
   border:1px solid black;
+  margin: 3px;
 
 }
 .sendMessage{
+  text-align: center;
   width:50%;
+  height: 50px;
   margin-left: 40%;
   background-color: purple;
-  color:wheat;
+  color:white;
   border:1px solid wheat;
+  border-radius: 10px;
 }

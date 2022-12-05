@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react';
 import { useParams,useNavigate } from 'react-router-dom';
+import Message from "../assets/message.png";
 function Comments({data}) {
   
   const navigate=useNavigate();
@@ -46,8 +47,10 @@ console.log(filtered[0].comments)
         </div>
         )
       })}
-      <input type="text" placeholder='Add a comment' className='mt-2 wid' value={comment} onChange={(e)=>setComment(e.target.value)} ></input>
-      <button onClick={addComment}>Add Comments</button>
+      <div className="input-comment">
+      <input type="text" placeholder='Add a comment' className='mt-2 wid border' value={comment} onChange={(e)=>setComment(e.target.value)} ></input>
+      <img src={Message} onClick={addComment} className="messagewidth"/>
+      </div>
       </div>
   )
 } 
